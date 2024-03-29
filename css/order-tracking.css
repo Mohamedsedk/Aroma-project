@@ -1,0 +1,330 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+button,a{
+  cursor: pointer;
+}
+nav{
+  display: flex;
+  margin: auto;
+  justify-content: space-around;
+  padding: 25px 0px;
+  position: relative;
+
+}
+nav img{
+  padding-left: 50px;
+  animation-name: logo ;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  
+}
+
+@keyframes logo{
+  30%{
+      transform: translateX(30px);
+  }
+  60%{
+      transform: translateX(0px);
+  }
+  90%{
+      transform: translateX(-30px);
+  }
+}
+
+nav ul{
+  margin-right: 40px;
+}
+nav ul li{
+  
+ display: inline-block;
+  padding-left: 30px;
+ 
+
+}
+
+nav ul li a{
+  text-decoration: none;
+  color: black;
+  font-size: large;
+
+}
+nav ul li a::after{
+ content: '';
+ width: 0%;
+ height: 3px;
+ background-color: rgb(55, 55, 206);
+ display: block;
+ margin: auto;
+ border-radius: 3px;
+ transition:.7s;
+
+ 
+}
+nav ul li a:hover::after{
+  width: 100%;
+  
+  
+}
+
+nav .fa-solid{
+  padding-left: 10px;
+  color: black;
+  
+}
+nav .navBtn a{
+  text-decoration: none;
+  border: 1px solid rgb(224, 209, 209);
+  padding: 10px 40px;
+  margin-right: 33px;
+  border-radius: 40px;
+  color: black;
+  font-weight: 600;
+  transition: .7s;
+  font-size: large;
+
+}
+nav .navBtn a:hover{
+  background-color: rgb(55, 55, 206);
+  color: aliceblue;
+}
+
+
+
+nav  h5{
+  color: aliceblue;
+  height: 15px; 
+  width: 15px;
+  border-radius: 50%;
+  position: absolute;
+  background-color: rgb(55, 55, 206);
+  top: 11px;
+  left: 1057px;
+
+}
+nav h5 span{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50% , -50%);
+}
+
+.dropbtn{
+  
+  color: black;
+  padding-left: 30px;
+  font-size: 16px;
+  border: none;
+  background-color: white;
+}
+
+.dropdown{
+  position: relative;
+  display: inline-block;
+  
+}
+.dropdown-content{
+  display: none;
+  position: absolute;
+  
+  min-width: 160px;
+  box-shadow: 0px 8px 16px rgba(0,0,0,.2);
+  z-index: 1;
+}
+.dropdown-content a{
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.dropdown-content a:hover{
+  background-color: rgb(54, 15, 224);
+  color: white;
+}
+
+.dropdown:hover .dropdown-content{
+  display: block;
+}
+
+/* header sction */
+.header {
+  width: 100%;
+  height: 500px;
+  background-color: rgb(206, 218, 221);
+  margin: auto;
+  margin-bottom: 100px;
+  position: relative;
+  
+}
+
+.header div{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50% ,-50% );
+}
+
+.header div h1{
+  font-size: 50px;
+  font-weight: 900;
+  padding: 10px 0px;
+}
+.header div p{
+  margin-left: 70px;
+  font-size: large;
+  color:dimgrey;
+}
+
+.content{
+    width: 80%;
+    margin: auto;
+    margin-bottom: 100px;
+}
+
+.content p{
+  line-height: 23px;
+  font-size: large;
+  margin-bottom: 30px;
+}
+
+.content form input{
+  display: block;
+
+}
+.content form .s{
+  width: 600px;
+  height: 20px;
+  padding: 15px 20px;
+  margin-bottom: 20px;
+  border: 1px solid rgb(212, 209, 209);
+  outline: none;
+}
+.content form .t{
+  width: 200px;
+  
+  padding: 11px 10px;
+  color: #fff;
+  background-color: blue;
+  font-size: large;
+  border-radius: 30px;
+  border: none;
+  transition: .7s;
+  cursor: pointer;
+
+}
+.content form .t:hover{
+  color: black;
+  background-color: rgb(222, 222, 236);
+}
+
+
+
+/* footer section */
+
+footer{
+  width: 100%;
+  height: 600px;
+  display: flex;
+  background-color: rgb(9, 9, 66);
+  flex-wrap: wrap;
+}
+
+footer .first-col{
+  flex-basis: 20%;
+  margin-top: 170px;
+  padding-left: 150px;
+  
+}
+footer .first-col h1{
+  color: aliceblue;
+  margin-bottom: 20px;
+  font-size:40px;
+  
+}
+footer .first-col p{
+  color: darkgray;
+  line-height: 22px;
+  word-spacing: 4px;
+}
+
+footer .second-col{
+  flex-basis: 15%;
+  margin-top: 180px;
+  margin-left: 70px;
+}
+
+footer .second-col h1{
+  color: aliceblue;
+  margin-bottom: 20px;
+  font-size:25px;
+  
+}
+footer .second-col a{
+  display: block;
+  padding-top: 20px;
+  text-decoration: none;
+  color: gray;
+}
+footer .second-col a:hover{
+  color: rgb(8, 8, 231);
+}
+footer .third-col{
+  flex-basis: 15%;
+  margin-top: 180px;
+  margin-left: 50px;
+}
+footer .third-col h1{
+  color: aliceblue;
+  font-size: 25px;
+  margin-bottom: 25px;
+}
+footer .third-col img{
+  padding: 7px;
+}
+
+.forth-col{
+  
+  flex-basis: 20%;
+  
+  margin-top: 180px;
+  margin-left: 50px;
+  
+}
+
+.forth-col h1{
+  margin-bottom: 25px;
+  font-size: 25px;
+  color: aliceblue;
+  
+}
+.forth-col div{
+  display: flex;
+
+}
+.forth-col .fa-solid ,.forth-col .fa-brands{
+  font-size: x-large;
+  color: aliceblue;
+  
+}
+footer .forth-col h4{
+  padding-left: 10px;
+  margin-bottom: 7px;
+  color: aliceblue;
+
+}
+
+footer .forth-col p{
+  padding-left: 10px;
+  color: grey;
+  margin-bottom: 10px;
+
+}
+
+footer .made-by{
+  color: #fff;
+}
+
+footer .made-by{
+  margin: auto;
+}

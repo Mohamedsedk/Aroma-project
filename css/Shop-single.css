@@ -1,0 +1,637 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+button,a{
+    cursor: pointer;
+}
+nav{
+    display: flex;
+    margin: auto;
+    justify-content: space-around;
+    padding: 25px 0px;
+    position: relative;
+  
+
+}
+nav img{
+    padding-left: 50px;
+    animation-name: logo ;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    
+}
+
+@keyframes logo{
+    30%{
+        transform: translateX(30px);
+    }
+    60%{
+        transform: translateX(0px);
+    }
+    90%{
+        transform: translateX(-30px);
+    }
+}
+
+nav ul{
+    margin-right: 40px;
+}
+nav ul li{
+    
+   display: inline-block;
+    padding-left: 30px;
+   
+
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: large;
+
+}
+nav ul li a::after{
+   content: '';
+   width: 0%;
+   height: 3px;
+   background-color: rgb(55, 55, 206);
+   display: block;
+   margin: auto;
+   border-radius: 3px;
+   transition:.7s;
+
+   
+}
+nav ul li a:hover::after{
+    width: 100%;
+    
+    
+}
+
+nav .fa-solid{
+    padding-left: 10px;
+    color: black;
+    
+}
+nav .navBtn a{
+    text-decoration: none;
+    border: 1px solid rgb(224, 209, 209);
+    padding: 10px 40px;
+    margin-right: 33px;
+    border-radius: 40px;
+    color: black;
+    font-weight: 600;
+    transition: .7s;
+    font-size: large;
+
+}
+nav .navBtn a:hover{
+    background-color: rgb(55, 55, 206);
+    color: aliceblue;
+}
+
+
+
+nav  h5{
+    color: aliceblue;
+    height: 15px; 
+    width: 15px;
+    border-radius: 50%;
+    position: absolute;
+    background-color: rgb(55, 55, 206);
+    top: 11px;
+    left: 1057px;
+  
+}
+nav h5 span{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+}
+.dropbtn{
+    
+    color: black;
+    padding-left: 30px;
+    font-size: 16px;
+    border: none;
+    background-color: white;
+}
+
+.dropdown{
+    position: relative;
+    display: inline-block;
+    
+}
+.dropdown-content{
+    display: none;
+    position: absolute;
+    
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0,0,0,.2);
+    z-index: 1;
+}
+.dropdown-content a{
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-content a:hover{
+    background-color: rgb(54, 15, 224);
+    color: white;
+}
+
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+
+/* header sction */
+.header {
+    width: 100%;
+    height: 500px;
+    background-color: rgb(206, 218, 221);
+    margin: auto;
+    margin-bottom: 100px;
+    position: relative;
+    
+}
+
+.header div{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% ,-50% );
+}
+
+.header div h1{
+    font-size: 50px;
+    font-weight: 900;
+    padding: 10px 0px;
+}
+.header div p{
+    margin-left: 70px;
+    font-size: large;
+    color:dimgrey;
+}
+
+
+/* first section*/
+
+.First-section {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    margin-bottom: 100px;
+}
+
+.First-section .left-div{
+    flex-basis: 45%;
+}
+
+
+.First-section .left-div img{
+    width: 500px;
+}
+
+.First-section .right-div{
+    flex-basis: 50%;
+}
+
+.First-section .right-div h2{
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
+
+.First-section .right-div span{
+    font-size: xx-large;
+    font-weight: bold;
+    display: inline-block;
+    margin-bottom: 10px;
+    color: rgb(49, 49, 212);
+}
+
+.First-section .right-div pre{
+    font-size: larger;
+    padding-bottom: 10px;
+    color: dimgray;
+    
+}
+
+.First-section .right-div p{
+    margin-bottom: 30px;
+    color: dimgray;
+    margin-top: 20px;
+    line-height: 22px;
+}
+
+.First-section .right-div .Quantity  input{
+    width: 50px;
+    padding-left: 10px;
+    height: 20px;
+    font-size: larger;
+
+    
+}
+.First-section .right-div .Quantity  button{
+    width: 150px;
+    padding: 12px 5px;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    background-color: rgb(25, 25, 202);
+    color: #fff;
+    margin-left: 10px;
+    font-size: 17px;
+    transition: .7s;
+}
+
+.First-section .right-div .Quantity  button:hover{
+    background-color: aliceblue;
+    color: black;
+}
+
+
+.First-section .right-div #gem{
+    background-color: rgb(200, 214, 223);
+    margin-left: 7px;
+    padding: 7px;
+    border-radius: 3px;
+    color:blue;
+
+}
+
+.pro-nav{
+    display: flex;
+    width: 80%;
+    justify-content: center;
+    background-color: rgba(192, 215, 226, 0.5);
+    padding: 20px 1px;
+    margin: auto;
+    
+}
+.pro-nav .Desc ,.pro-nav .Spec , .pro-nav .Comm ,.pro-nav .Rev{
+    margin-left: 30px;
+    width: 150px;
+    padding: 13px 5px;
+    border-radius: 20px;
+    background-color: #fff;
+    color: dimgray;
+    font-size: large;
+    border: none;
+    transition: .7s;
+
+}
+.pro-nav .Desc:hover ,.pro-nav .Spec:hover , .pro-nav .Comm:hover {
+    background-color: blue;
+    color: #fff;
+
+}
+
+.pro-nav .Rev{
+    color: white;
+    background-color: rgb(19, 19, 204);
+}
+
+.pro-nav .Rev:hover{
+    color: black;
+    background-color: #fff;
+}
+
+.byers-opinion{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    border-width:0px 1px 1px 1px ;
+    border-color: rgb(235, 229, 229);
+    border-style: solid;
+    margin-bottom: 100px;
+    height: 900px;
+}
+
+.byers-opinion .left-div{
+    flex-basis: 50%;
+    
+}
+
+.byers-opinion .left-div .f-div{
+    display: flex;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.byers-opinion .left-div .f-div .overal{
+    flex-basis: 40%;
+    width: 80%;
+    height: 180px;
+    margin: auto;
+    background-color: rgba(192, 215, 226, 0.5);
+    text-align: center;
+    
+}
+.byers-opinion .left-div .f-div .overal h1{
+    margin-top: 20px;
+    font-size: 40px;
+}
+.byers-opinion .left-div .f-div .overal span{
+    font-size:60px;
+    color: blue;
+    font-weight: bolder;
+    margin-bottom: 5px;
+} 
+
+.byers-opinion .left-div .f-div .overal pre{
+    font-size: larger;
+}
+
+.byers-opinion .left-div .f-div .rev h1{
+    font-size: 25px;
+    margin-bottom: 13px;
+
+}
+
+.byers-opinion .left-div .f-div .rev pre{
+    font-size: large;
+    padding-bottom: 8px;
+}
+
+.byers-opinion .left-div .f-div .rev pre .fa{
+    color: rgb(204, 204, 87);
+}
+
+
+.byers-opinion .left-div .se-div{
+    display: flex;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-left: 50px;
+    flex-wrap:wrap ;
+    transition: 1s;
+}
+.byers-opinion .left-div .se-div:hover{
+
+    color: blue;
+    box-shadow: 1px 1px 30px dimgray;
+}
+.byers-opinion .left-div .se-div h1 ,pre{
+    margin-left: 20px;
+    
+    
+
+}
+.byers-opinion .left-div .se-div img{
+    margin-bottom:10px ;
+} 
+.byers-opinion .left-div .se-div pre{
+    color: rgb(228, 228, 37);
+    padding-top: 10px
+}
+.byers-opinion .left-div .se-div p{
+    line-height: 20px;
+    font-size: large;
+}
+
+
+.byers-opinion .right-div{
+    flex-basis: 45%;
+    margin-left: 60px;
+    margin-top: 40px;
+    
+}
+
+.byers-opinion .right-div h1{
+    padding-bottom: 20px;
+}
+.byers-opinion .right-div p{
+    color: rgb(71, 71, 71);
+    padding-bottom: 20px;
+} 
+
+.byers-opinion .right-div .fa{
+    color: rgb(228, 228, 37);
+    padding: 0px 2px;
+}
+.byers-opinion .right-div form input{
+    display: block;
+    width: 450px;
+    height: 20px;
+    padding: 10px;
+    margin-bottom: 20px;
+    
+
+
+}
+
+.byers-opinion .right-div form textarea{
+    width: 450px;
+    padding: 10px;
+}
+
+.byers-opinion .right-div button{
+    
+    margin-left: 300px;
+    width: 150px;
+    padding: 13px 5px;
+    border-radius: 20px;
+    background-color: blue;
+    color: white;
+    font-size: large;
+    border: none;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: .7s;
+}
+.byers-opinion .right-div button:hover{
+    color: black;
+    background-color: rgb(145, 198, 211);
+}
+
+
+
+/* top product section */
+
+.top-product{
+    width: 80%;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+.top-product p{
+    font-size: large;
+    padding-bottom: 5px;
+}
+
+.top-product h1{
+    font-size: 35px;
+    margin-bottom: 50px;
+
+}
+
+.top-product h1::after{
+    content: '';
+    width: 10%;
+    height: 3px;
+    background-color: blue;
+    display: block;
+    margin-left: 68px;
+    margin-top: 5px;
+    transition: 1s;
+}
+.top-product h1:hover:after{
+    width: 16%;
+    margin-left: 0;
+}
+
+
+
+.top-product .content{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.top-product .content .pro-col{
+    border: 1px solid rgb(230, 227, 227);
+    flex-basis: 20%;
+    padding: 35px 20px;
+    transition: 1s;
+}
+
+
+.top-product .content .pro-col .details-pro{
+    display: flex;
+    transition: 1s;
+}
+.top-product .content .pro-col .details-pro:hover{
+    color: blue;
+    box-shadow: 1px 1px 30px dimgray;
+    transform: scale(1.005);
+}
+.top-product .content .pro-col .details-pro img{
+    margin-bottom: 30px;
+    padding-right: 10px;
+    
+} 
+
+.top-product .content .pro-col h4{
+    padding: 10px 0px;
+    font-size: large;
+}
+.top-product .content .pro-col p{
+
+    font-size: 20px;
+    color: dimgray;
+}
+
+
+
+
+/* footer section */
+
+footer{
+    width: 100%;
+    height: 600px;
+    display: flex;
+    background-color: rgb(9, 9, 66);
+    flex-wrap: wrap;
+}
+
+footer .first-col{
+    flex-basis: 20%;
+    margin-top: 170px;
+    padding-left: 150px;
+    
+}
+footer .first-col h1{
+    color: aliceblue;
+    margin-bottom: 20px;
+    font-size:40px;
+    
+}
+footer .first-col p{
+    color: darkgray;
+    line-height: 22px;
+    word-spacing: 4px;
+}
+
+footer .second-col{
+    flex-basis: 15%;
+    margin-top: 180px;
+    margin-left: 70px;
+}
+
+footer .second-col h1{
+    color: aliceblue;
+    margin-bottom: 20px;
+    font-size:25px;
+    
+}
+footer .second-col a{
+    display: block;
+    padding-top: 20px;
+    text-decoration: none;
+    color: gray;
+}
+footer .second-col a:hover{
+    color: rgb(8, 8, 231);
+}
+footer .third-col{
+    flex-basis: 15%;
+    margin-top: 180px;
+    margin-left: 50px;
+}
+footer .third-col h1{
+    color: aliceblue;
+    font-size: 25px;
+    margin-bottom: 25px;
+}
+footer .third-col img{
+    padding: 7px;
+}
+
+.forth-col{
+    
+    flex-basis: 20%;
+    
+    margin-top: 180px;
+    margin-left: 50px;
+    
+}
+
+.forth-col h1{
+    margin-bottom: 25px;
+    font-size: 25px;
+    color: aliceblue;
+    
+}
+.forth-col div{
+    display: flex;
+
+}
+.forth-col .fa-solid ,.forth-col .fa-brands{
+    font-size: x-large;
+    color: aliceblue;
+    
+}
+footer .forth-col h4{
+    padding-left: 10px;
+    margin-bottom: 7px;
+    color: aliceblue;
+
+}
+
+footer .forth-col p{
+    padding-left: 10px;
+    color: grey;
+    margin-bottom: 10px;
+
+}
+
+footer .made-by{
+    color: #fff;
+    margin: auto;
+}
+
